@@ -13,15 +13,6 @@ namespace Fibo.App.Second.IoC
     {
         public static IServiceCollection AddFibonacciServices(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddScoped<ICommandHandler<EvaluateFibonacciStepCommand>, EvaluateFibonacciStepCommandHandler>();
-
-            //services.AddScoped<IFibonacciEvaluationSender, FibonacciEvaluationWebSender>();
-            //services.Configure<WebSenderConfig>(configuration.GetSection("WebSender"));
-
-            //services.AddScoped<IFibonacciEvaluationService, FibonacciEvaluationService>();
-
-            //services.AddSingleton<IFibonacciStorage, FibonacciStorage>();
-
             services.AddTransient<ICommandHandler<EvaluateFibonacciStepCommand>, EvaluateFibonacciStepCommandHandler>();
 
             services.AddTransient<IFibonacciEvaluationSender, FibonacciEvaluationBusSender>();
