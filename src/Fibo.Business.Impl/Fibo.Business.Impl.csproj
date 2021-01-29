@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="EasyNetQ" Version="3.5.0" />
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="log4net" Version="2.0.10" />
     <PackageReference Include="RestSharp" Version="106.6.9" />
   </ItemGroup>
 
